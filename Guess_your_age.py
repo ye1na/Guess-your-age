@@ -4,4 +4,7 @@ print("Hello", Name)
 Current_Year = 2025
 Birth_Year = int(input("What's your birth year ?"))
 Age = Current_Year - Birth_Year
-print(Name, ",", "Your age is", Age)
+if Age < 18 :
+    print(Name, "You are a minor" + "," +str(Age))
+else:
+    print(Name, "You are an adult" + ", " + str(Age))
